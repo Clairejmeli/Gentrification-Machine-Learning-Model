@@ -18,7 +18,7 @@
 **The files should be run in the order listed above.**
 
 ## Data files
-All data files to be loaded into R and their descriptions of variables can be found in the `DATA` folder. 
+Not all data files to be loaded into R and their descriptions of variables can be found in the `DATA` folder. Size was too large to upload.
 
 The R scripts create and save two files: `final_data_clean_2000.csv` and `final_data_clean_2010.csv` which hold all the features used to train the Random Forest model in their respective year. The former file contains the "gentrified" label (1 or 0) for each census tract.
 
