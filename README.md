@@ -6,6 +6,11 @@
 # README File for QSS Senior One Quarter Major Project
 ##### *Claire Meli, 23W*
 
+## Overview
+This project builds a Random Forest classifier to predict whether a U.S. census tract gentrified between 2000 and 2010, using Census/ACS socioeconomic and land use features. The target variable was constructed in R using a two-step methodology: tracts were first identified as "gentrifiable" based on below-median household income in 2000, then classified as gentrified if their composite socioeconomic change score — built from PCA on five indicators including income, rent, and educational attainment — exceeded the 75th percentile of change across gentrifiable tracts in the same city. The final model was tuned via randomized grid search with 5-fold cross-validation and evaluated on accuracy, F1 score, ROC/AUC, and feature importance. 
+
+Key finding: features related to neighborhood disadvantage — poverty rate, proportion of renters, and foreclosure rate — were most predictive of gentrification risk.
+
 ## Files to run
 1. `load_data.R`: load data from files in directory
 2. `modify_data.R`: combine data into data frames for all variables, one data frame for 2000-2003 period and one data frame for 2010-2013 period
